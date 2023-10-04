@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+}
+.paragraph {
+  color: #fff;
+}
+.gradiant__light {
+  background: rgb(216, 174, 236);
+  background: radial-gradient(
+    circle,
+    rgba(216, 174, 236, 1) 0%,
+    rgba(177, 109, 243, 1) 39%,
+    rgba(142, 50, 226, 1) 78%,
+    rgba(131, 35, 245, 1) 100%
+  );
+}
+.gradiant__dark {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+.gradient__btn {
+  background: linear-gradient(to right bottom, #38126d, #130428);
+}
+.gradient__btn:hover {
+  background: linear-gradient(to right bottom, #130428, #38126d);
+}
+.gradient__darkest {
+  background: radial-gradient(
+    151.92% 127.02% at 15.32% 21.04%,
+    rgba(105, 59, 147, 0.2) 0%,
+    rgba(110, 191, 244, 0.04) 77.08%,
+    rgba(70, 144, 212, 0) 100%
+  );
+}
+.layout__shadow {
+  border-radius: 700px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+.img_left__shadow {
+  box-shadow: -15px -15px 20px #2b0b3a;
+}
+.img_right__shadow {
+  box-shadow: 15px -15px 20px #2b0b3a;
+}
+.card {
+  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+}
+.card:nth-child(odd) {
+  background: linear-gradient(
+    96deg,
+    #130428 0.58%,
+    #251043 16.32%,
+    #38126d 29.33%,
+    #261045 45.66%,
+    #190634 54.44%
+  );
+}
+.card:nth-child(even) {
+  background: linear-gradient(
+    150deg,
+    #130428 37.22%,
+    #251043 70.43%,
+    #38126d 97.89%,
+    #261045 132.38%,
+    #190634 150.9%
+  );
+}
