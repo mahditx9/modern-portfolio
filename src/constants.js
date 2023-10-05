@@ -60,3 +60,34 @@ export const featuredProjects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident quaerat dolorem voluptatibus quisquam excepturi, commodi quod distinctio",
   },
 ];
+
+export const services = [
+  {
+    id: "s1",
+    title: "Wordpress",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident quaerat dolorem voluptatibus quisquam excepturi, commodi quod distinctio",
+    img: "/cms.jpg",
+  },
+  {
+    id: "s2",
+    title: "Frontend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident quaerat dolorem voluptatibus quisquam excepturi, commodi quod distinctio",
+    img: "/web-develope.jpg",
+  },
+  {
+    id: "s3",
+    title: "PWA Web Application",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident quaerat dolorem voluptatibus quisquam excepturi, commodi quod distinctio",
+    img: "/pwa.jpg",
+  },
+  {
+    id: "s4",
+    title: "Android & Ios Application",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident quaerat dolorem voluptatibus quisquam excepturi, commodi quod distinctio",
+    img: "/mobile-application.jpg",
+  },
+];

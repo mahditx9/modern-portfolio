@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "../styles";
+import { motion } from "framer-motion";
 function Intro() {
   return (
     <section id="intro" className={styles.section_layout}>
@@ -7,15 +8,23 @@ function Intro() {
       <div className="lg:w-[80%] xl:w-[60%]">
         <div className="flex  ss:flex-row flex-col  capitalize">
           <div className="ss:max-w-[50%] ss:max-h-[80%] max-h-full max-w-full  sm:mr-0 mr-5">
-            <img
+            <motion.img
               src="/my-photo.png"
               alt="me"
               className=" object-contain relative z-40"
+              initial={{ opacity: 0, translateX: -200 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ ease: "easeIn", duration: 0.3 }}
             />
             {/* <div className="gradiant__light opacity-[.5] rounded-full w-[200px] h-[200px] sm:w-[270px] sm:h-[270px] absolute left-12 top-36 sm:left-32 sm:top-24" /> */}
           </div>
 
-          <div className=" flex flex-col justify-around ss:mt-0 mt-8">
+          <motion.div
+            className=" flex flex-col justify-around ss:mt-0 mt-8"
+            initial={{ opacity: 0, translateY: -60 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ ease: "linear", duration: 0.4 }}
+          >
             <p className={styles.paragraph}>
               hello im{" "}
               <span className="text-[#7127BA] text-xl font-semibold">
@@ -32,7 +41,7 @@ function Intro() {
                 Because if the cover does not impress you what else can?
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* USER INTRO */}
