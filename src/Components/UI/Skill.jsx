@@ -1,9 +1,15 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import styles from "../../styles";
-function Skill({ skill: { title, level, Icon } }) {
+import { motion } from "framer-motion";
+function Skill({ skill: { title, level, Icon }, index }) {
   return (
-    <div className="flex z-40 ss:flex-row flex-col gap-y-7  items-center gap-3">
+    <motion.div
+      className={`flex z-40 ss:flex-row flex-col gap-y-7  items-center gap-3`}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: index / 25 + 0.1, duration: 0.4 }}
+    >
       <Icon className={`text-5xl  ss:text-6xl sm:text-7xl text-[#fff]`} />
       <div className="flex flex-row items-center justify-between">
         <h2 className={`${styles.heading2} whitespace-nowrap`}>{title}</h2>
@@ -13,7 +19,7 @@ function Skill({ skill: { title, level, Icon } }) {
           {level}%
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

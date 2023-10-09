@@ -1,11 +1,12 @@
 import styles from "../styles";
 import { skills } from "../constants";
 import Skill from "./UI/Skill";
+import { motion } from "framer-motion";
 function Skills() {
   return (
     <section className={`${styles.section_layout}`}>
       <h2 className={`${styles.main_heading}`}>My Skills</h2>
-      <div
+      <motion.div
         className={`w-full grid justify-center items-center gap-y-28 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${styles.marginTop} relative`}
       >
         <div className="absolute inset-0 flex justify-center items-center">
@@ -14,10 +15,10 @@ function Skills() {
         <div className="ss:hidden absolute layout__shadow w-[50rem] h-[50rem] -top-20 -right-2/3 opacity-[.3]" />
         <div className="ss:hidden absolute layout__shadow w-[50rem] h-[50rem] top-[40%] -left-2/3 opacity-[.3]" />
         <div className="ss:hidden absolute layout__shadow w-[40rem] h-[40rem] top-[60%] -right-2/3 opacity-[.2]" />
-        {skills.map((skilItem) => (
-          <Skill key={skilItem.id} skill={skilItem} />
+        {skills.map((skilItem, index) => (
+          <Skill key={skilItem.id} skill={skilItem} index={index + 1} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

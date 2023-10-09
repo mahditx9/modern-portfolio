@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -83,4 +86,16 @@ body {
     #261045 132.38%,
     #190634 150.9%
   );
+}
+.skills {
+  animation: slideIn 0.3s;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

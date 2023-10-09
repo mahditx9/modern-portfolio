@@ -8,7 +8,7 @@ import {
   TbBrandPython,
   TbBrandTailwind,
   TbBrandJavascript,
-} from "react-Icons/tb";
+} from "react-icons/tb";
 import { BiLogoWordpress } from "react-icons/bi";
 export const skills = [
   { id: "s1", title: "HTML5", level: 85, Icon: TbBrandHtml5 },

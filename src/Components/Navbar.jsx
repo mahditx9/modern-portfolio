@@ -7,14 +7,15 @@ function Navbar() {
   return (
     <nav className="sticky top-0 right-0 left-0 z-50 shadow-md shadow-slate-950 bg-[#1A0B2E] text-[#fff]  ">
       <div className="sm:py-3 sm:px-24 px-8 py-4 flex justify-between items-center">
-        <h1 className="sm:flex-none flex-1 text-center">Logo</h1>
+        {/* <h1 className="sm:flex-none flex-1 text-center">Logo</h1> */}
+        <img src="/lightening.png" alt="logo" className="w-14 h-14" />
         <div className="sm:flex hidden flex-1  justify-end items-center gap-x-12 text-lg">
           <a href="#">Intro</a>
           <a href="#">Portfolio</a>
           <a href="#">Contact</a>
         </div>
         <RxHamburgerMenu
-          className="inline-block sm:hidden"
+          className="inline-block sm:hidden text-3xl"
           onClick={() => setOpenMenu(true)}
         />
       </div>
