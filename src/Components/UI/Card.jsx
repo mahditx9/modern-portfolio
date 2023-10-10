@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 function Card({ service: { title, description, img }, index }) {
   return (
     <motion.div
-      initial={
-        index % 2 == 0 ? { x: 400, opacity: 0 } : { x: -400, opacity: 0 }
-      }
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: "easeIn", duration: 0.5 }}
+      // initial={
+      //   index % 2 == 0 ? { x: 400, opacity: 0 } : { x: -400, opacity: 0 }
+      // }
+      // whileInView={{ x: 0, opacity: 1 }}
+      // transition={{ ease: "easeIn", duration: 0.5 }}
       className=" rounded-[15px] px-12 py-6 flex flex-col items-center ss:items-start card "
     >
       <img src={img} alt="me" className="w-full max-h-64 object-cover" />
